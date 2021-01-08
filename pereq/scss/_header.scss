@@ -1,0 +1,53 @@
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 68px 0 0 77px;
+    position: absolute;
+}
+
+.header-logo {
+    font-size: 3.8rem;
+    letter-spacing: 3.8px;
+}
+
+
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include tab {
+        display: none;
+    }
+    & li {
+        font-size: 1.8rem;
+        padding-left: 20px;
+        letter-spacing: 1.8px;
+        &:nth-child(2),
+        &:nth-child(3),
+        &:nth-child(4) {
+            color: #707070;
+        }
+    }
+}
+
+.ham {
+    display: none;
+    @include tab {
+        width: 25px;
+        height: 14px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        transform: translate(90px, 0);
+        & span {
+            width: 100%;
+            border: 1px solid #3B4043;
+      }
+    }
+}
+
+.line-bar {
+    border-bottom: 1px solid black;
+}

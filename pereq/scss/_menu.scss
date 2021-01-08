@@ -1,0 +1,51 @@
+#menu {
+    width: 100%;
+}
+
+.menu-wrap {
+    width: 1282px;
+    padding: 261px 107px 70px;
+}
+
+.menu-inner {
+    display: flex;
+    justify-content: space-between;
+    @include sp {
+        flex-direction: column;
+    }
+}
+
+.menu-item {
+    width: 22%;
+    
+}
+
+.menu-img {
+    width: 100%;
+    img {
+        width: 100%;
+    }
+}
+
+.menu-text {
+    padding-top: 35px;
+}
+
+.menu-course {
+    font-size: 3rem;
+    letter-spacing: 3px;
+}
+
+.menu-text {
+    letter-spacing: 1.6px;
+}
+
+.menu-course, .menu-text {
+    text-align: center;
+}
+
+.price {
+    text-align: right;
+    padding-top: 35px;
+    font-weight: bold;
+}
